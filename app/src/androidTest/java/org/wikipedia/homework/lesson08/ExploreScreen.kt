@@ -2,7 +2,6 @@ package org.wikipedia.homework.lesson08
 
 import android.view.View
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.test.espresso.matcher.ViewMatchers.withId
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
