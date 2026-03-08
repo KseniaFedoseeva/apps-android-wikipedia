@@ -19,14 +19,6 @@ object ExploreScreen : KScreen<ExploreScreen>() {
         withId(R.id.main_toolbar_wordmark)
     }
 
-    val items = KRecyclerView (
-        builder = {withId(R.id.feed_view)},
-        itemTypeBuilder = {
-            itemType (provideItem = ::SearchItem)
-        }
-
-    )
-
     val newsCard = KRecyclerView(
         builder = {
             withId(R.id.news_cardview_recycler_view)
@@ -50,6 +42,19 @@ object ExploreScreen : KScreen<ExploreScreen>() {
         },
         itemTypeBuilder = {
             itemType(::TopReadItem)
+        }
+    )
+
+    val items = KRecyclerView(
+        builder = {
+            withId(R.id.feed_view)
+        },
+        itemTypeBuilder = {
+            itemType(::SearchItem)
+            itemType(::Customize)
+            itemType(::Date)
+            itemType(::TopReadItem)
+            itemType(::InTheNews)
         }
     )
 }

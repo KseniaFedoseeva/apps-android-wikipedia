@@ -34,6 +34,10 @@ object OnboardingScreen : KScreen<OnboardingScreen>() {
         withId(R.id.fragment_onboarding_skip_button)
     }
 
+    val continueButton = KButton {
+        withId(R.id.fragment_onboarding_done_button)
+    }
+
 }
 
 class PagerItem(matcher: Matcher<View>) : KViewPagerItem<PagerItem>(matcher) {
