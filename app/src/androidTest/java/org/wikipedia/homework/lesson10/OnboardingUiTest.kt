@@ -31,7 +31,7 @@ class OnboardingUiTest : TestCase() {
     @Test
     fun checkPrimaryText() {
         run {
-            OnboardingUiScreen.primaryText.containsText("300")
+            OnboardingUiScreen.primaryText.containsText("The Free")
         }
     }
 

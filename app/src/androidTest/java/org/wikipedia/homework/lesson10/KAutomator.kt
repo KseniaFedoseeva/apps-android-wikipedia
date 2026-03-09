@@ -23,6 +23,6 @@ object OnboardingUiScreen : UiScreen<OnboardingUiScreen>() {
     }
 
     val primaryText = UiTextView {
-        withId(this@OnboardingUiScreen.packageName, "primaryText")
+        withId(this@OnboardingUiScreen.packageName, "primaryTextView")
     }
 }
