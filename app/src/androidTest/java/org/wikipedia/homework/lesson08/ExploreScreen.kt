@@ -6,6 +6,7 @@ import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.recycler.KRecyclerView
+import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 import org.wikipedia.R
 import org.wikipedia.feed.view.FeedView
@@ -63,6 +64,10 @@ class SearchItem(matcher: Matcher<View>): KRecyclerItem<SearchItem>(matcher) {
     val icon = KImageView(parent = matcher) {
         isInstanceOf(clazz = AppCompatImageView::class.java)
         isDisabled()
+    }
+
+    val textSearch = KTextView(matcher) {
+        withText("Search Wikipedia")
     }
 }
 
